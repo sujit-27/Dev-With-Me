@@ -15,7 +15,15 @@ function App() {
         <TooltipProvider>
           <Toaster />
           <Router>
-            <Route path="/" component={Home} />
+            {/* Main route */}
+            <Route path="/">
+              <Home />
+            </Route>
+
+            {/* Fallback route to handle refreshes and unknown URLs */}
+            <Route path="*">
+              <Home />
+            </Route>
           </Router>
         </TooltipProvider>
       </ThemeProvider>
