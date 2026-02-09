@@ -5,7 +5,7 @@ import { Button } from "./ui/Button";
 import { Badge } from "./ui/Badge";
 import TrendoraImg from "../assets/Trendora.png"
 import FilePulseImg from "../assets/FilePulse.png"
-import GameVerseImg from '../assets/GameVerse.png'
+import MailForgeImg from '../assets/MailForge.png'
 import CertiQuestImg from '../assets/CertiQuest.png'
 import { FaGithub } from "react-icons/fa";
 
@@ -15,7 +15,16 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Trendora",
+      title: "MailForge – Microservices Email Engine",
+      description: "MailForge is a scalable microservices email platform built for secure and reliable message delivery.",
+      image: MailForgeImg,
+      tags: ["Spring Boot", "Microservices", "Apache Kafka", "Docker", "API Gateway"],
+      liveUrl: "https://mail-forge-plum.vercel.app/",
+      githubUrl: "https://github.com/sujit-27/MailForge.git",
+    },
+    {
+      id: 2,
+      title: "Trendora - Full-Stack E-commerce Platform",
       description: "A full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.",
       image: TrendoraImg,
       tags: ["React", "Appwrite", "Tailwind", "Razorpay"],
@@ -23,8 +32,8 @@ export default function Projects() {
       githubUrl: "https://github.com/sujit-27/Trendora.git",
     },
     {
-      id: 2,
-      title: "FilePulse",
+      id: 3,
+      title: "FilePulse - Secure File Exchange Hub",
       description: "File Pulse is a secure file exchange hub that enables seamless upload, sharing, and collaboration on files within a user-friendly interface.",
       image: FilePulseImg,
       tags: ["React", "Spring", "Postgres", "Tailwind", "Razorpay"],
@@ -32,17 +41,8 @@ export default function Projects() {
       githubUrl: "https://github.com/sujit-27/FilePulse.git",
     },
     {
-      id: 3,
-      title: "Game-Verse – Explore and Discover Your Favorite Games",
-      description: "GameVerse is a responsive React-based gaming app that showcases trending and new games using the RAWG API.",
-      image: GameVerseImg,
-      tags: ["React", "Tailwind", "Redux", "API"],
-      liveUrl: "https://game-verse-eosin.vercel.app/",
-      githubUrl: "https://github.com/sujit-27/Game-Verse.git",
-    },
-    {
       id: 4,
-      title: "CertiQuest - AI Powered Quiz & Certification Platform",
+      title: "CertiQuest - AI Powered Quiz Platform",
       description: "CertiQuest is an AI-powered quiz and certification platform that allows users to create, take, and evaluate quizzes effortlessly.",
       image: CertiQuestImg,
       tags: ["React", "Spring", "Postgres", "Tailwind", "Razorpay"],
