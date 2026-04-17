@@ -43,8 +43,8 @@ export default function Hero() {
 
   const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/Sujit_Kumar_Shaw_Resume.pdf";
-    link.download = "Sujit_Kumar_Shaw_Resume.pdf";
+    link.href = "/Sujit_Kumar_Shaw_Resume(2).pdf";
+    link.download = "Sujit_Kumar_Shaw_Resume(2).pdf";
     link.click();
   };
 
